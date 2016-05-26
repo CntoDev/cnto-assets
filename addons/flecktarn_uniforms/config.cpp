@@ -1,16 +1,17 @@
 class CfgPatches
 {
-    class cnto_flecktarn_uniforms
+    class cnto_assets_flecktarn_uniforms
     {
         units[] = {};
         weapons[] = {};
         requiredAddons[] = {"A3_Characters_F", "A3_Weapons_F"};
+        author[] = {"Price"};
     };
 };
 
-#include "\cnto_assets_shared\uniforms.h"
+#include "\cnto\assets\shared\uniforms.h"
 
-#define TXR(path) \cnto_flecktarn_uniforms\##path
+#define TXR(path) \cnto\assets\flecktarn_uniforms\##path
 
 class CfgVehicles {
     class B_Soldier_base_F;
