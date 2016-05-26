@@ -4,7 +4,7 @@ class CfgPatches
     {
         units[] = {};
         weapons[] = {};
-        requiredAddons[] = {"A3_Characters_F", "A3_Weapons_F"};
+        requiredAddons[] = {"A3_Characters_F", "A3_Weapons_F", "cnto_assets_shared"};
         author[] = {"Price"};
     };
 };
