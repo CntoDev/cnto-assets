@@ -19,10 +19,18 @@ class CfgPatches {
         scope = 2; \
         displayName = text; \
         hiddenSelections[] += {"camo"}; \
-        hiddenSelectionsTextures[] =  { paa }; \
+        hiddenSelectionsTextures[] = { paa }; \
         class ItemInfo : ItemInfo { \
             uniformClass = name; \
         }; \
+    }
+
+#define BACKPACK(name, base, text, paa) \
+    class name : base { \
+        scope = 2; \
+        displayName = text; \
+        hiddenSelections[] += {"camo"}; \
+        hiddenSelectionsTextures[] = { paa }; \
     }
 
 #define VEST(name, base, text, paa) \
@@ -30,7 +38,18 @@ class CfgPatches {
         scope = 2; \
         displayName = text; \
         hiddenSelections[] += {"camo"}; \
-        hiddenSelectionsTextures[] =  { paa }; \
+        hiddenSelectionsTextures[] = { paa }; \
+        class ItemInfo : ItemInfo { \
+            hiddenSelections[] += {"camo"}; \
+        }; \
+    }
+
+#define HEADGEAR(name, base, text, paa) \
+    class name : base { \
+        scope = 2; \
+        displayName = text; \
+        hiddenSelections[] += {"camo"}; \
+        hiddenSelectionsTextures[] = { paa }; \
         class ItemInfo : ItemInfo { \
             hiddenSelections[] += {"camo"}; \
         }; \
@@ -61,6 +80,27 @@ class CfgVehicles {
     UNIFORM_SOLDIER(cnto_flecktarn_u_r_jungle, B_Soldier_base_F, TXR(jungle.paa), MDL);
     UNIFORM_SOLDIER(cnto_flecktarn_u_r_mediterranean, B_Soldier_base_F, TXR(mediterranean.paa), MDL);
     UNIFORM_SOLDIER(cnto_flecktarn_u_r_snow, B_Soldier_base_F, TXR(snow.paa), MDL);
+
+    /* ------------------------------------------- */
+
+    class B_AssaultPack_Base;
+    class B_Kitbag_Base;
+
+    /*
+     * Flecktarn Backpacks
+     */
+    #define TXR(path) \cnto\assets\flecktarn_backpacks\##path
+    BACKPACK(cnto_flecktarn_b_ap_desert, B_AssaultPack_Base, "CNTO AssaultPack (Desert)", TXR(desert_assault.paa));
+    BACKPACK(cnto_flecktarn_b_ap_forest, B_AssaultPack_Base, "CNTO AssaultPack (Forest)", TXR(forest_assault.paa));
+    BACKPACK(cnto_flecktarn_b_ap_jungle, B_AssaultPack_Base, "CNTO AssaultPack (Jungle)", TXR(jungle_assault.paa));
+    BACKPACK(cnto_flecktarn_b_ap_mediterranean, B_AssaultPack_Base, "CNTO AssaultPack (Mediterranean)", TXR(mediterranean_assault.paa));
+    BACKPACK(cnto_flecktarn_b_ap_snow, B_AssaultPack_Base, "CNTO AssaultPack (Snow)", TXR(snow_assault.paa));
+
+    BACKPACK(cnto_flecktarn_b_kb_desert, B_Kitbag_Base, "CNTO KitBag (Desert)", TXR(desert_kitbag.paa));
+    BACKPACK(cnto_flecktarn_b_kb_forest, B_Kitbag_Base, "CNTO KitBag (Forest)", TXR(forest_kitbag.paa));
+    BACKPACK(cnto_flecktarn_b_kb_jungle, B_Kitbag_Base, "CNTO KitBag (Jungle)", TXR(jungle_kitbag.paa));
+    BACKPACK(cnto_flecktarn_b_kb_mediterranean, B_Kitbag_Base, "CNTO KitBag (Mediterranean)", TXR(mediterranean_kitbag.paa));
+    BACKPACK(cnto_flecktarn_b_kb_snow, B_Kitbag_Base, "CNTO KitBag (Snow)", TXR(snow_kitbag.paa));
 };
 
 class CfgWeapons {
@@ -128,4 +168,31 @@ class CfgWeapons {
     VEST(cnto_flecktarn_v_snow, V_PlateCarrier2_rgr, "CNTO Flecktarn Carrier (Snow)", TXR(snow.paa));
     VEST(cnto_flecktarn_v_h_snow, V_PlateCarrierGL_rgr, "CNTO Flecktarn Carrier Heavy (Snow)", TXR(snow_heavy.paa));
     VEST(cnto_flecktarn_v_s_snow, V_PlateCarrierSpec_rgr, "CNTO Flecktarn Carrier Special (Snow)", TXR(snow_heavy.paa));
+
+    /* ------------------------------------------- */
+
+    class ItemCore;
+    class HelmetBase;
+    class H_HelmetB : ItemCore { class ItemInfo; };
+    class H_Booniehat_khk : HelmetBase { class ItemInfo; };
+    class H_Beret_blk : HelmetBase { class ItemInfo; };
+
+    /*
+     * Flecktarn Headgear
+     */
+
+    #define TXR(path) \cnto\assets\flecktarn_headgear\##path
+    HEADGEAR(cnto_flecktarn_h_c_desert, H_HelmetB, "CNTO Combat Helmet (Desert)", TXR(desert_helmet.paa));
+    HEADGEAR(cnto_flecktarn_h_c_forest, H_HelmetB, "CNTO Combat Helmet (Forest)", TXR(forest_helmet.paa));
+    HEADGEAR(cnto_flecktarn_h_c_jungle, H_HelmetB, "CNTO Combat Helmet (Jungle)", TXR(jungle_helmet.paa));
+    HEADGEAR(cnto_flecktarn_h_c_mediterranean, H_HelmetB, "CNTO Combat Helmet (Mediterranean)", TXR(mediterranean_helmet.paa));
+    HEADGEAR(cnto_flecktarn_h_c_snow, H_HelmetB, "CNTO Combat Helmet (Snow)", TXR(snow_helmet.paa));
+
+    HEADGEAR(cnto_flecktarn_h_boo_desert, H_Booniehat_khk, "CNTO Boonie Hat (Desert)", TXR(desert_boonie.paa));
+    HEADGEAR(cnto_flecktarn_h_boo_forest, H_Booniehat_khk, "CNTO Boonie Hat (Forest)", TXR(forest_boonie.paa));
+    HEADGEAR(cnto_flecktarn_h_boo_jungle, H_Booniehat_khk, "CNTO Boonie Hat (Jungle)", TXR(jungle_boonie.paa));
+    HEADGEAR(cnto_flecktarn_h_boo_mediterranean, H_Booniehat_khk, "CNTO Boonie Hat (Mediterranean)", TXR(mediterranean_boonie.paa));
+    HEADGEAR(cnto_flecktarn_h_boo_snow, H_Booniehat_khk, "CNTO Boonie Hat (Snow)", TXR(snow_boonie.paa));
+
+    HEADGEAR(cnto_flecktarn_h_beret, H_Beret_blk, "CNTO Beret", TXR(beret.paa));
 };
