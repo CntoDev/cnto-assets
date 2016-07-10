@@ -2,7 +2,7 @@ class CfgPatches {
     class cnto_assets_configs {
         units[] = {};
         weapons[] = {};
-        requiredAddons[] = {"A3_Characters_F", "A3_Weapons_F"};
+        requiredAddons[] = {"A3_Characters_F", "A3_Weapons_F", "rhs_c_troops"};
     };
 };
 
@@ -164,6 +164,8 @@ class CfgWeapons {
     class H_HelmetB;
     class H_Booniehat_khk;
     class H_Beret_blk;
+    class rhs_6b27m;
+    class rhs_6b27m_ess;
 
     /*
      * Flecktarn Headgear
@@ -183,4 +185,16 @@ class CfgWeapons {
     HEADGEAR(cnto_flecktarn_h_boo_snow, H_Booniehat_khk, "CNTO Flecktarn Boonie Hat (Snow)", TXR(snow_boonie.paa));
 
     HEADGEAR(cnto_flecktarn_h_beret, H_Beret_blk, "CNTO Beret", TXR(beret.paa));
+
+    HEADGEAR(cnto_flecktarn_h_6b27m_desert, rhs_6b27m, "CNTO Flecktarn 6b27m Helmet (Desert)", TXR(desert_6b27m.paa));
+    HEADGEAR(cnto_flecktarn_h_6b27m_forest, rhs_6b27m, "CNTO Flecktarn 6b27m Helmet (Forest)", TXR(forest_6b27m.paa));
+    HEADGEAR(cnto_flecktarn_h_6b27m_jungle, rhs_6b27m, "CNTO Flecktarn 6b27m Helmet (Jungle)", TXR(jungle_6b27m.paa));
+    HEADGEAR(cnto_flecktarn_h_6b27m_mediterranean, rhs_6b27m, "CNTO Flecktarn 6b27m Helmet (Mediterranean)", TXR(mediterranean_6b27m.paa));
+    HEADGEAR(cnto_flecktarn_h_6b27m_snow, rhs_6b27m, "CNTO Flecktarn 6b27m Helmet (Snow)", TXR(snow_6b27m.paa));
+
+    HEADGEAR(cnto_flecktarn_h_6b27me_desert, rhs_6b27m_ess, "CNTO Flecktarn 6b27m Helmet ESS (Desert)", TXR(desert_6b27m.paa));
+    HEADGEAR(cnto_flecktarn_h_6b27me_forest, rhs_6b27m_ess, "CNTO Flecktarn 6b27m Helmet ESS (Forest)", TXR(forest_6b27m.paa));
+    HEADGEAR(cnto_flecktarn_h_6b27me_jungle, rhs_6b27m_ess, "CNTO Flecktarn 6b27m Helmet ESS (Jungle)", TXR(jungle_6b27m.paa));
+    HEADGEAR(cnto_flecktarn_h_6b27me_mediterranean, rhs_6b27m_ess, "CNTO Flecktarn 6b27m Helmet ESS (Mediterranean)", TXR(mediterranean_6b27m.paa));
+    HEADGEAR(cnto_flecktarn_h_6b27me_snow, rhs_6b27m_ess, "CNTO Flecktarn 6b27m Helmet ESS (Snow)", TXR(snow_6b27m.paa));
 };
