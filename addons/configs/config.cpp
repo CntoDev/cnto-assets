@@ -44,6 +44,13 @@ class CfgPatches {
         hiddenSelectionsTextures[] = { paa }; \
     }
 
+#define FACEWEAR(name, base, text, paa) \
+    class name : base { \
+        scope = 2; \
+        displayName = text; \
+        hiddenSelectionsTextures[] = { paa }; \
+    }
+
 class CfgVehicles {
     class B_Soldier_base_F;
 
@@ -197,4 +204,23 @@ class CfgWeapons {
     HEADGEAR(cnto_flecktarn_h_6b27me_jungle, rhs_6b27m_ess, "CNTO Flecktarn 6b27m Helmet ESS (Jungle)", TXR(jungle_6b27m.paa));
     HEADGEAR(cnto_flecktarn_h_6b27me_mediterranean, rhs_6b27m_ess, "CNTO Flecktarn 6b27m Helmet ESS (Mediterranean)", TXR(mediterranean_6b27m.paa));
     HEADGEAR(cnto_flecktarn_h_6b27me_snow, rhs_6b27m_ess, "CNTO Flecktarn 6b27m Helmet ESS (Snow)", TXR(snow_6b27m.paa));
+};
+
+class CfgGlasses {
+    class rhs_balaclava;
+    class G_Bandanna_blk;
+
+    /*
+     * Flecktarn Facewear
+     */
+    #define TXR(path) \cnto\assets\flecktarn_facewear\##path
+    FACEWEAR(cnto_flecktarn_f_bala_desert, rhs_balaclava, "CNTO Flecktarn Balaclava (Desert)", TXR(balaclava_desert));
+    FACEWEAR(cnto_flecktarn_f_bala_forest, rhs_balaclava, "CNTO Flecktarn Balaclava (Forest)", TXR(balaclava_forest));
+    FACEWEAR(cnto_flecktarn_f_bala_jungle, rhs_balaclava, "CNTO Flecktarn Balaclava (Jungle)", TXR(balaclava_jungle));
+    FACEWEAR(cnto_flecktarn_f_bala_mediterranean, rhs_balaclava, "CNTO Flecktarn Balaclava (Mediterranean)", TXR(balaclava_mediterranean));
+    FACEWEAR(cnto_flecktarn_f_bala_snow, rhs_balaclava, "CNTO Flecktarn Balaclava (Snow)", TXR(balaclava_snow));
+
+    FACEWEAR(cnto_flecktarn_f_band_snow, G_Bandanna_blk, "CNTO Bandana (Snow)", TXR(bandana_snow));
+    FACEWEAR(cnto_flecktarn_f_band_owl1, G_Bandanna_blk, "CNTO Bandana (Owl 1)", TXR(bandana_owl1));
+    FACEWEAR(cnto_flecktarn_f_band_owl2, G_Bandanna_blk, "CNTO Bandana (Owl 2)", TXR(bandana_owl2));
 };
