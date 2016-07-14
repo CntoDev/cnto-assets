@@ -1,5 +1,5 @@
 class CfgPatches {
-    class cnto_assets_configs {
+    class cnto_assets {
         units[] = {};
         weapons[] = {};
         requiredAddons[] = {"A3_Characters_F", "A3_Weapons_F", "rhs_c_troops"};
