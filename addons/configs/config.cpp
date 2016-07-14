@@ -12,6 +12,7 @@ class CfgPatches {
         uniformClass = name; \
         hiddenSelectionsTextures[] = { paa }; \
         model = p3d; \
+        modelSides[] = {3,2,1,0}; \
     }
 #define UNIFORM(name, base, text, paa) \
     class name : base { \
