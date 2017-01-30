@@ -52,6 +52,13 @@ class CfgPatches {
         hiddenSelectionsTextures[] = { paa }; \
     }
 
+#define INSIGNIA(name, text, paa) \
+    class name { \
+        displayName = text; \
+        texture = paa; \
+        textureVehicle = ""; \
+    }
+
 class CfgVehicles {
     class B_Soldier_base_F;
 
@@ -244,4 +251,67 @@ class CfgGlasses {
     FACEWEAR(cnto_flecktarn_f_band_snow, G_Bandanna_blk, "CNTO Bandana (Snow)", TXR(bandana_snow));
     FACEWEAR(cnto_flecktarn_f_band_owl1, G_Bandanna_blk, "CNTO Bandana (Owl 1)", TXR(bandana_owl1));
     FACEWEAR(cnto_flecktarn_f_band_owl2, G_Bandanna_blk, "CNTO Bandana (Owl 2)", TXR(bandana_owl2));
+};
+
+class CfgUnitInsignia {
+    /*
+     * BiBo's flags (worn only)
+     * http://arma.rocketspeak.de
+     * https://steamcommunity.com/sharedfiles/filedetails/?id=654816931
+     */
+    #define TXR(path) \cnto\assets\country_flags\##path
+    INSIGNIA(AUTFlagW, "Austrian Flag", TXR(AUTFlagW.paa));
+    INSIGNIA(BELFlagW, "Belgian Flag", TXR(BELFlagW.paa));
+    INSIGNIA(BGFlagW, "Bulgarian Flag", TXR(BGFlagW.paa));
+    INSIGNIA(BYFlagW, "Belarusian Flag", TXR(BYFlagW.paa));
+    INSIGNIA(CYFlagW, "Cyprus Flag", TXR(CYFlagW.paa));
+    INSIGNIA(CZFlagW, "Czech Flag", TXR(CZFlagW.paa));
+    INSIGNIA(DANFlagW, "Danish Flag", TXR(DANFlagW.paa));
+    INSIGNIA(DUFlagW, "Dutch Flag", TXR(DUFlagW.paa));
+    INSIGNIA(ESFlagW, "Spanish Flag", TXR(ESFlagW.paa));
+    INSIGNIA(ESTFlagW, "Estonian Flag", TXR(ESTFlagW.paa));
+    INSIGNIA(EUFlagW, "European Flag", TXR(EUFlagW.paa));
+    INSIGNIA(FIFlagW, "Finnish Flag", TXR(FIFlagW.paa));
+    INSIGNIA(FRFlagW, "French Flag", TXR(FRFlagW.paa));
+    INSIGNIA(GBFlagW, "UK Flag", TXR(GBFlagW.paa));
+    INSIGNIA(GERFlagW, "German Flag", TXR(GERFlagW.paa));
+    INSIGNIA(GRFlagW, "Greek Flag", TXR(GRFlagW.paa));
+    INSIGNIA(HUFlagW, "Hungarian Flag", TXR(HUFlagW.paa));
+    INSIGNIA(IRLFlagW, "Irish Flag", TXR(IRLFlagW.paa));
+    INSIGNIA(ITFlagW, "Italian Flag", TXR(ITFlagW.paa));
+    INSIGNIA(LUFlagW, "Luxembourgish Flag", TXR(LUFlagW.paa));
+    INSIGNIA(LVFlagW, "Latvian Flag", TXR(LVFlagW.paa));
+    INSIGNIA(MAFlagW, "Maltese Flag", TXR(MAFlagW.paa));
+    INSIGNIA(NEFlagW, "Nederland Flag", TXR(NEFlagW.paa));
+    INSIGNIA(PLFlagW, "Polish Flag", TXR(PLFlagW.paa));
+    INSIGNIA(PTFlagW, "Portuguese Flag", TXR(PTFlagW.paa));
+    INSIGNIA(ROFlagW, "Romanian Flag", TXR(ROFlagW.paa));
+    INSIGNIA(RUFlagW, "Russian Flag", TXR(RUFlagW.paa));
+    INSIGNIA(SLFlagW, "Slovakia Flag", TXR(SLFlagW.paa));
+    INSIGNIA(SLWFlagW, "Slovene Flag", TXR(SLWFlagW.paa));
+    INSIGNIA(SWEFlagW, "Swedish Flag", TXR(SWEFlagW.paa));
+    INSIGNIA(SWFlagW, "Swiss Flag", TXR(SWFlagW.paa));
+    INSIGNIA(TRFlagW, "Turkish Flag", TXR(TRFlagW.paa));
+    INSIGNIA(UAFlagW, "Ukrainian Flag", TXR(UAFlagW.paa));
+    INSIGNIA(ADFlagW, "Andorran Flag", TXR(ADFlagW.paa));
+    INSIGNIA(ALFlagW, "Albanian Flag", TXR(ALFlagW.paa));
+    INSIGNIA(AZFlagW, "Azerbaijani Flag", TXR(AZFlagW.paa));
+    INSIGNIA(BAFlagW, "Bosnian Flag", TXR(BAFlagW.paa));
+    INSIGNIA(GEFlagW, "Georgian Flag", TXR(GEFlagW.paa));
+    INSIGNIA(ISFlagW, "Icelandic Flag", TXR(ISFlagW.paa));
+    INSIGNIA(KZFlagW, "Kazakh Flag", TXR(KZFlagW.paa));
+    INSIGNIA(LIFlagW, "Liechtenstein Flag", TXR(LIFlagW.paa));
+    INSIGNIA(MDFlagW, "Moldovian Flag", TXR(MDFlagW.paa));
+    INSIGNIA(MEFlagW, "Montenegrin Flag", TXR(MEFlagW.paa));
+    INSIGNIA(MKFlagW, "Macedonian Flag", TXR(MKFlagW.paa));
+    INSIGNIA(MOFlagW, "Monaco Flag", TXR(MOFlagW.paa));
+    INSIGNIA(RSDFlagW, "Serbian Flag", TXR(RSDFlagW.paa));
+    INSIGNIA(SMFlagW, "San Marino Flag", TXR(SMFlagW.paa));
+    INSIGNIA(VTFlagW, "Vatican City Flag", TXR(VTFlagW.paa));
+    INSIGNIA(LTFlagW, "Lithuanian Flag", TXR(LTFlagW.paa));
+    INSIGNIA(NWFlagW, "Norwegian Flag", TXR(NWFlagW.paa));
+    INSIGNIA(SCTFlagW, "Scotish Flag", TXR(SCTFlagW.paa));
+    INSIGNIA(WAFlagW, "Welsh Flag", TXR(WAFlagW.paa));
+    INSIGNIA(ENFlagW, "English Flag", TXR(ENFlagW.paa));
+    INSIGNIA(HRFlagW, "Croatian Flag", TXR(HRFlagW.paa));
 };
