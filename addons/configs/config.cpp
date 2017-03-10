@@ -2,9 +2,17 @@ class CfgPatches {
     class cnto_assets {
         units[] = {};
         weapons[] = {};
-        requiredAddons[] = {"A3_Characters_F", "A3_Weapons_F", "rhs_c_troops"};
+        requiredAddons[] = {
+            "A3_Characters_F",
+            "A3_Weapons_F",
+            "rhs_c_troops",
+            "A3_Soft_F_Beta_MRAP_03",  // MRAP_03_base_F
+            "A3_Armor_F_EPB_MBT_03"    // MBT_03_base_F
+        };
     };
 };
+
+#define COMMA ,
 
 #define UNIFORM_SOLDIER(name, base, paa, p3d) \
     class name : base { \
@@ -59,6 +67,19 @@ class CfgPatches {
         textureVehicle = ""; \
     }
 
+#define VEHCAMO(veh, base, name, text, paas) \
+    class veh : base { \
+        class TextureSources { \
+            class name { \
+                displayName = text; \
+                textures[] = { \
+                    paas \
+                }; \
+            }; \
+        }; \
+    }
+
+
 class CfgVehicles {
     class B_Soldier_base_F;
 
@@ -109,6 +130,24 @@ class CfgVehicles {
     BACKPACK(cnto_flecktarn_b_kb_mediterranean, B_Kitbag_Base, "CNTO Flecktarn KitBag (Mediterranean)", TXR(mediterranean_kitbag.paa));
     BACKPACK(cnto_flecktarn_b_kb_snow, B_Kitbag_Base, "CNTO Flecktarn KitBag (Snow)", TXR(snow_kitbag.paa));
     BACKPACK(cnto_flecktarn_b_kb_grassland, B_Kitbag_Base, "CNTO Flecktarn KitBag (Grassland)", TXR(grassland_kitbag.paa));
+
+    class Car_F;
+    class Tank_F;
+
+    /*
+     * Euro-themed vehicle skins
+     */
+    #define TXR(path) \cnto\assets\urban_euro_vehicles\##path COMMA
+    /* Strider MRAP (Fennek) */
+    VEHCAMO(MRAP_03_base_F, Car_F, cnto_urban_euro, "CNTO Urban Euro",
+        TXR(FennekLARV_urban_co.paa)
+    );
+    /* Kuma MBT (Leopard) */
+    VEHCAMO(MBT_03_base_F, Tank_F, cnto_urban_euro, "CNTO Urban Euro",
+        TXR(Leopard2A8ADV_body_urban_co.paa)
+        TXR(Leopard2A8ADV_turret_urban_co.paa)
+        TXR(Leopard2A8ADV_turret_urban_co.paa)
+    );
 };
 
 class CfgWeapons {
