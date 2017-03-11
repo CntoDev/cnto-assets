@@ -115,11 +115,10 @@ class CfgVehicles {
      * Urban Uniforms
      */
     #define TXR(path) \cnto\assets\urban_uniforms\##path
-    UNIFORM_SOLDIER(cnto_urban_u_inf, B_Soldier_base_F, TXR(infantry.paa), MDL_BLU);
-    UNIFORM_SOLDIER(cnto_urban_u_crew, B_Soldier_base_F, TXR(crew.paa), MDL_BLU);
-
-    UNIFORM_SOLDIER(cnto_urban_u_r_inf, B_Soldier_base_F, TXR(infantry.paa), MDL_BLU_RECON);
-    UNIFORM_SOLDIER(cnto_urban_u_r_crew, B_Soldier_base_F, TXR(crew.paa), MDL_BLU_RECON);
+    UNIFORM_SOLDIER(cnto_urban_u_m90, B_Soldier_base_F, TXR(m90.paa), MDL_BLU);
+    UNIFORM_SOLDIER(cnto_urban_u_m90_crew, B_Soldier_base_F, TXR(m90_crew.paa), MDL_BLU);
+    UNIFORM_SOLDIER(cnto_urban_u_r_m90, B_Soldier_base_F, TXR(m90.paa), MDL_BLU_RECON);
+    UNIFORM_SOLDIER(cnto_urban_u_r_m90_crew, B_Soldier_base_F, TXR(m90_crew.paa), MDL_BLU_RECON);
 
     /* ------------------------------------------- */
 
@@ -206,11 +205,10 @@ class CfgWeapons {
      * Urban Uniforms
      */
     #define TXR(path) \cnto\assets\urban_uniforms\##path
-    UNIFORM(cnto_urban_u_inf, U_B_CombatUniform_mcam, "CNTO Urban", TXR(infantry.paa));
-    UNIFORM(cnto_urban_u_crew, U_B_CombatUniform_mcam, "CNTO Urban (crew)", TXR(crew.paa));
-
-    UNIFORM(cnto_urban_u_r_inf, U_B_CombatUniform_mcam_vest, "CNTO Urban Recon", TXR(infantry.paa));
-    UNIFORM(cnto_urban_u_r_crew, U_B_CombatUniform_mcam_vest, "CNTO Urban Recon (crew)", TXR(crew.paa));
+    UNIFORM(cnto_urban_u_m90, U_B_CombatUniform_mcam, "CNTO Urban", TXR(m90.paa));
+    UNIFORM(cnto_urban_u_m90_crew, U_B_CombatUniform_mcam, "CNTO Urban (crew)", TXR(m90_crew.paa));
+    UNIFORM(cnto_urban_u_r_m90, U_B_CombatUniform_mcam_vest, "CNTO Urban Recon", TXR(m90.paa));
+    UNIFORM(cnto_urban_u_r_m90_crew, U_B_CombatUniform_mcam_vest, "CNTO Urban Recon (crew)", TXR(m90_crew.paa));
 
     /* ------------------------------------------- */
 
@@ -255,6 +253,16 @@ class CfgWeapons {
     VEST(cnto_flecktarn_v_grassland, V_PlateCarrier2_blk, "CNTO Flecktarn Carrier (Grassland)", TXR(grassland.paa));
     VEST(cnto_flecktarn_v_h_grassland, V_PlateCarrierGL_rgr, "CNTO Flecktarn Carrier Heavy (Grassland)", TXR(grassland_heavy.paa));
     VEST(cnto_flecktarn_v_s_grassland, V_PlateCarrierSpec_rgr, "CNTO Flecktarn Carrier Special (Grassland)", TXR(grassland_heavy.paa));
+
+    /*
+     * Urban Vests
+     */
+
+    #define TXR(path) \cnto\assets\urban_vests\##path
+    VEST(cnto_urban_v_l_m90, V_PlateCarrier1_blk, "CNTO Urban Carrier Lite (M90)", TXR(m90.paa));
+    VEST(cnto_urban_v_m90, V_PlateCarrier2_blk, "CNTO Urban Carrier (M90)", TXR(m90.paa));
+    VEST(cnto_urban_v_h_m90, V_PlateCarrierGL_rgr, "CNTO Urban Carrier Heavy (M90)", TXR(m90_heavy.paa));
+    VEST(cnto_urban_v_s_m90, V_PlateCarrierSpec_rgr, "CNTO Urban Carrier Special (M90)", TXR(m90_heavy.paa));
 
     /* ------------------------------------------- */
 
