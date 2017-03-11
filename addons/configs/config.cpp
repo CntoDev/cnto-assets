@@ -83,30 +83,43 @@ class CfgPatches {
 class CfgVehicles {
     class B_Soldier_base_F;
 
+    #define MDL_BLU       \A3\characters_F\BLUFOR\b_soldier_01.p3d
+    #define MDL_BLU_TEE   \A3\characters_F\BLUFOR\b_soldier_02.p3d
+    #define MDL_BLU_RECON \A3\characters_F\BLUFOR\b_soldier_03.p3d
+
     /*
      * Flecktarn Uniforms
      */
     #define TXR(path) \cnto\assets\flecktarn_uniforms\##path
-    #define MDL \A3\characters_F\BLUFOR\b_soldier_01.p3d
-    UNIFORM_SOLDIER(cnto_flecktarn_u_desert, B_Soldier_base_F, TXR(desert.paa), MDL);
-    UNIFORM_SOLDIER(cnto_flecktarn_u_forest, B_Soldier_base_F, TXR(forest.paa), MDL);
-    UNIFORM_SOLDIER(cnto_flecktarn_u_jungle, B_Soldier_base_F, TXR(jungle.paa), MDL);
-    UNIFORM_SOLDIER(cnto_flecktarn_u_mediterranean, B_Soldier_base_F, TXR(mediterranean.paa), MDL);
-    UNIFORM_SOLDIER(cnto_flecktarn_u_snow, B_Soldier_base_F, TXR(snow.paa), MDL);
-    UNIFORM_SOLDIER(cnto_flecktarn_u_grassland, B_Soldier_base_F, TXR(grassland.paa), MDL);
-    #define MDL \A3\characters_F\BLUFOR\b_soldier_02.p3d
-    //UNIFORM_SOLDIER(cnto_flecktarn_u_t_desert, B_Soldier_base_F, TXR(desert.paa), MDL);
-    UNIFORM_SOLDIER(cnto_flecktarn_u_t_forest, B_Soldier_base_F, TXR(forest.paa), MDL);
-    UNIFORM_SOLDIER(cnto_flecktarn_u_t_jungle, B_Soldier_base_F, TXR(jungle.paa), MDL);
-    //UNIFORM_SOLDIER(cnto_flecktarn_u_t_mediterranean, B_Soldier_base_F, TXR(mediterranean.paa), MDL);
-    //UNIFORM_SOLDIER(cnto_flecktarn_u_t_snow, B_Soldier_base_F, TXR(snow.paa), MDL);
-    #define MDL \A3\characters_F\BLUFOR\b_soldier_03.p3d
-    UNIFORM_SOLDIER(cnto_flecktarn_u_r_desert, B_Soldier_base_F, TXR(desert.paa), MDL);
-    UNIFORM_SOLDIER(cnto_flecktarn_u_r_forest, B_Soldier_base_F, TXR(forest.paa), MDL);
-    UNIFORM_SOLDIER(cnto_flecktarn_u_r_jungle, B_Soldier_base_F, TXR(jungle.paa), MDL);
-    UNIFORM_SOLDIER(cnto_flecktarn_u_r_mediterranean, B_Soldier_base_F, TXR(mediterranean.paa), MDL);
-    UNIFORM_SOLDIER(cnto_flecktarn_u_r_snow, B_Soldier_base_F, TXR(snow.paa), MDL);
-    UNIFORM_SOLDIER(cnto_flecktarn_u_r_grassland, B_Soldier_base_F, TXR(grassland.paa), MDL);
+    UNIFORM_SOLDIER(cnto_flecktarn_u_desert, B_Soldier_base_F, TXR(desert.paa), MDL_BLU);
+    UNIFORM_SOLDIER(cnto_flecktarn_u_forest, B_Soldier_base_F, TXR(forest.paa), MDL_BLU);
+    UNIFORM_SOLDIER(cnto_flecktarn_u_jungle, B_Soldier_base_F, TXR(jungle.paa), MDL_BLU);
+    UNIFORM_SOLDIER(cnto_flecktarn_u_mediterranean, B_Soldier_base_F, TXR(mediterranean.paa), MDL_BLU);
+    UNIFORM_SOLDIER(cnto_flecktarn_u_snow, B_Soldier_base_F, TXR(snow.paa), MDL_BLU);
+    UNIFORM_SOLDIER(cnto_flecktarn_u_grassland, B_Soldier_base_F, TXR(grassland.paa), MDL_BLU);
+
+    //UNIFORM_SOLDIER(cnto_flecktarn_u_t_desert, B_Soldier_base_F, TXR(desert.paa), MDL_BLU_TEE);
+    UNIFORM_SOLDIER(cnto_flecktarn_u_t_forest, B_Soldier_base_F, TXR(forest.paa), MDL_BLU_TEE);
+    UNIFORM_SOLDIER(cnto_flecktarn_u_t_jungle, B_Soldier_base_F, TXR(jungle.paa), MDL_BLU_TEE);
+    //UNIFORM_SOLDIER(cnto_flecktarn_u_t_mediterranean, B_Soldier_base_F, TXR(mediterranean.paa), MDL_BLU_TEE);
+    //UNIFORM_SOLDIER(cnto_flecktarn_u_t_snow, B_Soldier_base_F, TXR(snow.paa), MDL_BLU_TEE);
+
+    UNIFORM_SOLDIER(cnto_flecktarn_u_r_desert, B_Soldier_base_F, TXR(desert.paa), MDL_BLU_RECON);
+    UNIFORM_SOLDIER(cnto_flecktarn_u_r_forest, B_Soldier_base_F, TXR(forest.paa), MDL_BLU_RECON);
+    UNIFORM_SOLDIER(cnto_flecktarn_u_r_jungle, B_Soldier_base_F, TXR(jungle.paa), MDL_BLU_RECON);
+    UNIFORM_SOLDIER(cnto_flecktarn_u_r_mediterranean, B_Soldier_base_F, TXR(mediterranean.paa), MDL_BLU_RECON);
+    UNIFORM_SOLDIER(cnto_flecktarn_u_r_snow, B_Soldier_base_F, TXR(snow.paa), MDL_BLU_RECON);
+    UNIFORM_SOLDIER(cnto_flecktarn_u_r_grassland, B_Soldier_base_F, TXR(grassland.paa), MDL_BLU_RECON);
+
+    /*
+     * Urban Uniforms
+     */
+    #define TXR(path) \cnto\assets\urban_uniforms\##path
+    UNIFORM_SOLDIER(cnto_urban_u_inf, B_Soldier_base_F, TXR(infantry.paa), MDL_BLU);
+    UNIFORM_SOLDIER(cnto_urban_u_crew, B_Soldier_base_F, TXR(crew.paa), MDL_BLU);
+
+    UNIFORM_SOLDIER(cnto_urban_u_r_inf, B_Soldier_base_F, TXR(infantry.paa), MDL_BLU_RECON);
+    UNIFORM_SOLDIER(cnto_urban_u_r_crew, B_Soldier_base_F, TXR(crew.paa), MDL_BLU_RECON);
 
     /* ------------------------------------------- */
 
@@ -137,6 +150,8 @@ class CfgVehicles {
     BACKPACK(cnto_flecktarn_b_kb_mediterranean, B_Kitbag_Base, "CNTO Flecktarn KitBag (Mediterranean)", TXR(mediterranean_kitbag.paa));
     BACKPACK(cnto_flecktarn_b_kb_snow, B_Kitbag_Base, "CNTO Flecktarn KitBag (Snow)", TXR(snow_kitbag.paa));
     BACKPACK(cnto_flecktarn_b_kb_grassland, B_Kitbag_Base, "CNTO Flecktarn KitBag (Grassland)", TXR(grassland_kitbag.paa));
+
+    /* ------------------------------------------- */
 
     class Car_F;
     class Tank_F;
@@ -186,6 +201,16 @@ class CfgWeapons {
     UNIFORM(cnto_flecktarn_u_r_mediterranean, U_B_CombatUniform_mcam_vest, "CNTO Flecktarn Recon (Mediterranean)", TXR(mediterranean.paa));
     UNIFORM(cnto_flecktarn_u_r_snow, U_B_CombatUniform_mcam_vest, "CNTO Flecktarn Recon (Snow)", TXR(snow.paa));
     UNIFORM(cnto_flecktarn_u_r_grassland, U_B_CombatUniform_mcam_vest, "CNTO Flecktarn Recon (Grassland)", TXR(grassland.paa));
+
+    /*
+     * Urban Uniforms
+     */
+    #define TXR(path) \cnto\assets\urban_uniforms\##path
+    UNIFORM(cnto_urban_u_inf, U_B_CombatUniform_mcam, "CNTO Urban", TXR(infantry.paa));
+    UNIFORM(cnto_urban_u_crew, U_B_CombatUniform_mcam, "CNTO Urban (crew)", TXR(crew.paa));
+
+    UNIFORM(cnto_urban_u_r_inf, U_B_CombatUniform_mcam_vest, "CNTO Urban Recon", TXR(infantry.paa));
+    UNIFORM(cnto_urban_u_r_crew, U_B_CombatUniform_mcam_vest, "CNTO Urban Recon (crew)", TXR(crew.paa));
 
     /* ------------------------------------------- */
 
