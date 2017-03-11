@@ -112,6 +112,13 @@ class CfgVehicles {
 
     class B_AssaultPack_Base;
     class B_Kitbag_Base;
+    class B_Carryall_Base;
+
+    /*
+     * Vanilla Backpacks (hidden/unused textures)
+     */
+    BACKPACK(cnto_vanilla_kitbag_blk, B_Kitbag_Base, "Kitbag (Black)", \A3\weapons_f\ammoboxes\bags\data\backpack_fast_blk_co.paa);
+    BACKPACK(cnto_vanilla_carryall_blk, B_Carryall_Base, "Carryall Backpack (Black)", \A3\weapons_f\ammoboxes\bags\data\backpack_tortila_blk_co.paa);
 
     /*
      * Flecktarn Backpacks
