@@ -154,20 +154,28 @@ class CfgVehicles {
 
     class Car_F;
     class Tank_F;
+    class Wheeled_APC_F;
 
     /*
      * Euro-themed vehicle skins
      */
-    #define TXR(path) \cnto\assets\urban_euro_vehicles\##path COMMA
+    #define TXR(path) \cnto\assets\urban_vehicles\##path COMMA
     /* Strider MRAP (Fennek) */
-    VEHCAMO(MRAP_03_base_F, Car_F, cnto_urban_euro, "CNTO Urban Euro",
-        TXR(FennekLARV_urban_co.paa)
+    VEHCAMO(MRAP_03_base_F, Car_F, cnto_urban, "CNTO Urban",
+        TXR(strider_body.paa)
+        TXR(strider_turret.paa)
     );
     /* Kuma MBT (Leopard) */
-    VEHCAMO(MBT_03_base_F, Tank_F, cnto_urban_euro, "CNTO Urban Euro",
-        TXR(Leopard2A8ADV_body_urban_co.paa)
-        TXR(Leopard2A8ADV_turret_urban_co.paa)
-        TXR(Leopard2A8ADV_turret_urban_co.paa)
+    VEHCAMO(MBT_03_base_F, Tank_F, cnto_urban, "CNTO Urban",
+        TXR(kuma_body.paa)
+        TXR(kuma_gun.paa)
+        TXR(kuma_turret.paa)
+    );
+    /* Marid APC */
+    VEHCAMO(APC_Wheeled_02_base_F, Wheeled_APC_F, cnto_urban, "CNTO Urban",
+        TXR(marid_body.paa)
+        TXR(marid_wheels.paa)
+        TXR(marid_turret.paa)
     );
 };
 
