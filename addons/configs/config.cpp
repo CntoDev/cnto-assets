@@ -87,6 +87,7 @@ class CfgVehicles {
     #define MDL_BLU         \A3\characters_F\BLUFOR\b_soldier_01.p3d
     #define MDL_BLU_TEE     \A3\characters_F\BLUFOR\b_soldier_02.p3d
     #define MDL_BLU_RECON   \A3\characters_F\BLUFOR\b_soldier_03.p3d
+    #define MDL_BLU_STEALTH \A3\Characters_F_Exp\BLUFOR\B_CTRG_Soldier_01_F.p3d
 
     /*
      * Flecktarn Uniforms
@@ -131,6 +132,9 @@ class CfgVehicles {
     #define MDL_SEL "camo","insignia"
     UNIFORM_SOLDIER(cnto_urban_u_r_m90, B_Soldier_base_F, TXR(m90.paa));
     UNIFORM_SOLDIER(cnto_urban_u_r_m90_crew, B_Soldier_base_F, TXR(m90_crew.paa));
+    #define MDL MDL_BLU_STEALTH
+    #define MDL_SEL "camo","insignia"
+    UNIFORM_SOLDIER(cnto_urban_u_s_m90, B_Soldier_base_F, TXR(m90.paa));
 
     /* ------------------------------------------- */
 
@@ -196,6 +200,7 @@ class CfgWeapons {
     class U_B_CombatUniform_mcam : Uniform_Base { class ItemInfo; };
     class U_B_CombatUniform_mcam_tshirt : Uniform_Base { class ItemInfo; };
     class U_B_CombatUniform_mcam_vest : Uniform_Base { class ItemInfo; };
+    class U_B_CTRG_Soldier_F : Uniform_Base { class ItemInfo; };
 
     /*
      * Flecktarn Uniforms
@@ -232,6 +237,8 @@ class CfgWeapons {
 
     UNIFORM(cnto_urban_u_r_m90, U_B_CombatUniform_mcam_vest, "CNTO Urban Recon", TXR(m90.paa));
     UNIFORM(cnto_urban_u_r_m90_crew, U_B_CombatUniform_mcam_vest, "CNTO Urban Recon (crew)", TXR(m90_crew.paa));
+
+    UNIFORM(cnto_urban_u_s_m90, U_B_CTRG_Soldier_F, "CNTO Urban Stealth", TXR(m90.paa));
 
     /* ------------------------------------------- */
 
