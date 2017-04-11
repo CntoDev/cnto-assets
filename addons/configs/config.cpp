@@ -148,6 +148,8 @@ class CfgVehicles {
     BACKPACK(cnto_vanilla_kitbag_blk, B_Kitbag_Base, "Kitbag (Black)", \A3\weapons_f\ammoboxes\bags\data\backpack_fast_blk_co.paa);
     BACKPACK(cnto_vanilla_carryall_blk, B_Carryall_Base, "Carryall Backpack (Black)", \A3\weapons_f\ammoboxes\bags\data\backpack_tortila_blk_co.paa);
 
+    BACKPACK(cnto_carryall_white, B_Carryall_Base, "Carryall Backpack (White)", \cnto\assets\misc\snow_carryall.paa);
+
     /*
      * Flecktarn Backpacks
      */
