@@ -1,13 +1,16 @@
 class CfgPatches {
     class cnto_assets {
         units[] = {};
-        weapons[] = {};
+        weapons[] = {
+            "cnto_hk416_d10", "cnto_hk416_d10_m320", "cnto_hk416_d145", "cnto_hk416_d145_m320"
+        };
         requiredAddons[] = {
             "A3_Characters_F",
             "A3_Weapons_F",
             "rhs_c_troops",
             "A3_Soft_F_Beta_MRAP_03",  // MRAP_03_base_F
-            "A3_Armor_F_EPB_MBT_03"    // MBT_03_base_F
+            "A3_Armor_F_EPB_MBT_03",   // MBT_03_base_F
+            "rhsusf_c_weapons"         // HK416
         };
     };
 };
@@ -80,6 +83,14 @@ class CfgPatches {
         }; \
     }
 
+#define WEAPON(name, base, text, paas) \
+    class name : base { \
+        displayName = text; \
+        hiddenSelectionsTextures[] = { \
+            paas \
+        }; \
+        baseWeapon = name; \
+    }
 
 class CfgVehicles {
     class B_Soldier_base_F;
@@ -343,6 +354,57 @@ class CfgWeapons {
 
     //HEADGEAR(cnto_flecktarn_h_6b47_grassland, rhs_6b27m, "CNTO Flecktarn 6b47 Helmet (Grassland)", TXR(grassland_6b47.paa));
     //HEADGEAR(cnto_flecktarn_h_6b47e_grassland, rhs_6b47_ess, "CNTO Flecktarn 6b47 Helmet ESS (Grassland)", TXR(grassland_6b47.paa));
+
+    /* ------------------------------------------- */
+
+    class rhs_weap_hk416d10;
+    class rhs_weap_hk416d10_m320;
+    class rhs_weap_hk416d145;
+    class rhs_weap_hk416d145_m320;
+
+    #define TXR(path) \cnto\assets\rhs_weapons\##path COMMA
+    WEAPON(cnto_hk416_d10, rhs_weap_hk416d10, "CNTO HK416 D10 (Tan)",
+        TXR(wep_hk416d_2_tan.paa)
+        TXR(magazine_grey.paa)
+        \rhsusf\addons\rhsusf_weapons2\sr25\data\buttstock2_co.paa COMMA
+    );
+    WEAPON(cnto_hk416_d10_m320, rhs_weap_hk416d10_m320, "CNTO HK416 D10 M320 (Tan)",
+        TXR(wep_hk416d_2_tan.paa)
+        TXR(magazine_grey.paa)
+        \rhsusf\addons\rhsusf_weapons\m320\data\m320_co.paa COMMA
+    );
+    WEAPON(cnto_hk416_d145, rhs_weap_hk416d145, "CNTO HK416 D14.5 (Tan)",
+        TXR(wep_hk416d_1_tan.paa)
+        TXR(magazine_grey.paa)
+        \rhsusf\addons\rhsusf_weapons2\sr25\data\buttstock2_co.paa COMMA
+    );
+    WEAPON(cnto_hk416_d145_m320, rhs_weap_hk416d145_m320, "CNTO HK416 D14.5 M320 (Tan)",
+        TXR(wep_hk416d_1_tan.paa)
+        TXR(magazine_grey.paa)
+        \rhsusf\addons\rhsusf_weapons\m320\data\m320_co.paa COMMA
+    );
+
+    WEAPON(cnto_hk416_d10s, rhs_weap_hk416d10, "CNTO HK416 D10 (Snow)",
+        TXR(wep_hk416d_2_white.paa)
+        TXR(magazine_grey.paa)
+        \rhsusf\addons\rhsusf_weapons2\sr25\data\buttstock2_co.paa COMMA
+    );
+    WEAPON(cnto_hk416_d10_m320s, rhs_weap_hk416d10_m320, "CNTO HK416 D10 M320 (Snow)",
+        TXR(wep_hk416d_2_white.paa)
+        TXR(magazine_grey.paa)
+        \rhsusf\addons\rhsusf_weapons\m320\data\m320_co.paa COMMA
+    );
+    WEAPON(cnto_hk416_d145s, rhs_weap_hk416d145, "CNTO HK416 D14.5 (Snow)",
+        TXR(wep_hk416d_1_white.paa)
+        TXR(magazine_grey.paa)
+        \rhsusf\addons\rhsusf_weapons2\sr25\data\buttstock2_co.paa COMMA
+    );
+    WEAPON(cnto_hk416_d145_m320s, rhs_weap_hk416d145_m320, "CNTO HK416 D14.5 M320 (Snow)",
+        TXR(wep_hk416d_1_white.paa)
+        TXR(magazine_grey.paa)
+        \rhsusf\addons\rhsusf_weapons\m320\data\m320_co.paa COMMA
+    );
+
 };
 
 class CfgGlasses {
