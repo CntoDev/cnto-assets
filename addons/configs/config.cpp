@@ -355,6 +355,16 @@ class CfgWeapons {
     //HEADGEAR(cnto_flecktarn_h_6b47_grassland, rhs_6b27m, "CNTO Flecktarn 6b47 Helmet (Grassland)", TXR(grassland_6b47.paa));
     //HEADGEAR(cnto_flecktarn_h_6b47e_grassland, rhs_6b47_ess, "CNTO Flecktarn 6b47 Helmet ESS (Grassland)", TXR(grassland_6b47.paa));
 
+    /*
+     * Urban Headgear
+     */
+
+    class H_HelmetB_TI_tna_F;
+
+    #define TXR(path) \cnto\assets\urban_headgear\##path
+    HEADGEAR(cnto_urban_h_c_urban, H_HelmetB, "CNTO Urban Combat Helmet", TXR(combat_helmet.paa));
+    HEADGEAR(cnto_urban_h_h_urban, H_HelmetB_TI_tna_F, "CNTO Urban Heavy Helmet", TXR(heavy_helmet.paa));
+
     /* ------------------------------------------- */
 
     class rhs_weap_hk416d10;
