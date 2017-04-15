@@ -371,7 +371,7 @@ class CfgWeapons {
     WEAPON(cnto_hk416_d10_m320, rhs_weap_hk416d10_m320, "CNTO HK416 D10 M320 (Tan)",
         TXR(wep_hk416d_2_tan.paa)
         TXR(magazine_grey.paa)
-        \rhsusf\addons\rhsusf_weapons\m320\data\m320_co.paa COMMA
+        TXR(m320_grey.paa)
     );
     WEAPON(cnto_hk416_d145, rhs_weap_hk416d145, "CNTO HK416 D14.5 (Tan)",
         TXR(wep_hk416d_1_tan.paa)
@@ -381,7 +381,7 @@ class CfgWeapons {
     WEAPON(cnto_hk416_d145_m320, rhs_weap_hk416d145_m320, "CNTO HK416 D14.5 M320 (Tan)",
         TXR(wep_hk416d_1_tan.paa)
         TXR(magazine_grey.paa)
-        \rhsusf\addons\rhsusf_weapons\m320\data\m320_co.paa COMMA
+        TXR(m320_grey.paa)
     );
 
     WEAPON(cnto_hk416_d10s, rhs_weap_hk416d10, "CNTO HK416 D10 (Snow)",
@@ -392,7 +392,7 @@ class CfgWeapons {
     WEAPON(cnto_hk416_d10_m320s, rhs_weap_hk416d10_m320, "CNTO HK416 D10 M320 (Snow)",
         TXR(wep_hk416d_2_white.paa)
         TXR(magazine_grey.paa)
-        \rhsusf\addons\rhsusf_weapons\m320\data\m320_co.paa COMMA
+        TXR(m320_grey.paa)
     );
     WEAPON(cnto_hk416_d145s, rhs_weap_hk416d145, "CNTO HK416 D14.5 (Snow)",
         TXR(wep_hk416d_1_white.paa)
@@ -402,9 +402,8 @@ class CfgWeapons {
     WEAPON(cnto_hk416_d145_m320s, rhs_weap_hk416d145_m320, "CNTO HK416 D14.5 M320 (Snow)",
         TXR(wep_hk416d_1_white.paa)
         TXR(magazine_grey.paa)
-        \rhsusf\addons\rhsusf_weapons\m320\data\m320_co.paa COMMA
+        TXR(m320_grey.paa)
     );
-
 };
 
 class CfgGlasses {
