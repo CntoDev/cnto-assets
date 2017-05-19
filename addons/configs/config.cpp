@@ -113,12 +113,13 @@ class CfgVehicles {
     UNIFORM_SOLDIER(cnto_flecktarn_u_snow, B_Soldier_base_F, TXR(snow.paa));
     UNIFORM_SOLDIER(cnto_flecktarn_u_grassland, B_Soldier_base_F, TXR(grassland.paa));
     #define MDL MDL_BLU_TEE
-    #define MDL_SEL "camo","camo2"
+    #define MDL_SEL "camo","camo2"  // watch out! two TXR() per line below
     UNIFORM_SOLDIER(cnto_flecktarn_u_t_desert, B_Soldier_base_F, TXR(desert.paa) TXR(desert_shirt.paa));
     UNIFORM_SOLDIER(cnto_flecktarn_u_t_forest, B_Soldier_base_F, TXR(forest.paa) TXR(forest_shirt.paa));
     UNIFORM_SOLDIER(cnto_flecktarn_u_t_jungle, B_Soldier_base_F, TXR(jungle.paa) TXR(jungle_shirt.paa));
     UNIFORM_SOLDIER(cnto_flecktarn_u_t_mediterranean, B_Soldier_base_F, TXR(mediterranean.paa) TXR(mediterranean_shirt.paa));
-    //UNIFORM_SOLDIER(cnto_flecktarn_u_t_snow, B_Soldier_base_F, TXR(snow.paa) TXR(snow_shirt.paa));
+    UNIFORM_SOLDIER(cnto_flecktarn_u_t_snow, B_Soldier_base_F, TXR(snow.paa) TXR(snow_shirt.paa));
+    UNIFORM_SOLDIER(cnto_flecktarn_u_t_grassland, B_Soldier_base_F, TXR(grassland) TXR(grassland_shirt.paa));
     #define MDL MDL_BLU_RECON
     #define MDL_SEL "camo","insignia"
     UNIFORM_SOLDIER(cnto_flecktarn_u_r_desert, B_Soldier_base_F, TXR(desert.paa));
@@ -230,7 +231,8 @@ class CfgWeapons {
     UNIFORM(cnto_flecktarn_u_t_forest, U_B_CombatUniform_mcam_tshirt, "CNTO Flecktarn Tee (Forest)", TXR(forest.paa));
     UNIFORM(cnto_flecktarn_u_t_jungle, U_B_CombatUniform_mcam_tshirt, "CNTO Flecktarn Tee (Jungle)", TXR(jungle.paa));
     UNIFORM(cnto_flecktarn_u_t_mediterranean, U_B_CombatUniform_mcam_tshirt, "CNTO Flecktarn Tee (Mediterranean)", TXR(mediterranean.paa));
-    //UNIFORM(cnto_flecktarn_u_t_snow, U_B_CombatUniform_mcam_tshirt, "CNTO Flecktarn Tee (Snow)", TXR(snow.paa));
+    UNIFORM(cnto_flecktarn_u_t_snow, U_B_CombatUniform_mcam_tshirt, "CNTO Flecktarn Tee (Snow)", TXR(snow.paa));
+    UNIFORM(cnto_flecktarn_u_t_grassland, U_B_CombatUniform_mcam_tshirt, "CNTO Flecktarn Tee (Grassland)", TXR(grassland.paa));
 
     UNIFORM(cnto_flecktarn_u_r_desert, U_B_CombatUniform_mcam_vest, "CNTO Flecktarn Recon (Desert)", TXR(desert.paa));
     UNIFORM(cnto_flecktarn_u_r_forest, U_B_CombatUniform_mcam_vest, "CNTO Flecktarn Recon (Forest)", TXR(forest.paa));
