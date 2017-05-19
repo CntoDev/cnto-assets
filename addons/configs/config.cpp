@@ -180,6 +180,13 @@ class CfgVehicles {
     BACKPACK(cnto_flecktarn_b_kb_snow, B_Kitbag_Base, "CNTO Flecktarn KitBag (Snow)", TXR(snow_kitbag.paa));
     BACKPACK(cnto_flecktarn_b_kb_grassland, B_Kitbag_Base, "CNTO Flecktarn KitBag (Grassland)", TXR(grassland_kitbag.paa));
 
+    BACKPACK(cnto_flecktarn_b_ca_desert, B_Carryall_Base, "CNTO Flecktarn Carryall (Desert)", TXR(desert_carryall.paa));
+    BACKPACK(cnto_flecktarn_b_ca_forest, B_Carryall_Base, "CNTO Flecktarn Carryall (Forest)", TXR(forest_carryall.paa));
+    BACKPACK(cnto_flecktarn_b_ca_jungle, B_Carryall_Base, "CNTO Flecktarn Carryall (Jungle)", TXR(jungle_carryall.paa));
+    BACKPACK(cnto_flecktarn_b_ca_mediterranean, B_Carryall_Base, "CNTO Flecktarn Carryall (Mediterranean)", TXR(mediterranean_carryall.paa));
+    BACKPACK(cnto_flecktarn_b_ca_snow, B_Carryall_Base, "CNTO Flecktarn Carryall (Snow)", TXR(snow_carryall.paa));
+    BACKPACK(cnto_flecktarn_b_ca_grassland, B_Carryall_Base, "CNTO Flecktarn Carryall (Grassland)", TXR(grassland_carryall.paa));
+
     /* ------------------------------------------- */
 
     class Car_F;
