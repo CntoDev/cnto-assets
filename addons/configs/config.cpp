@@ -440,6 +440,7 @@ class CfgGlasses {
     FACEWEAR(cnto_flecktarn_f_bala_jungle, rhs_balaclava, "CNTO Flecktarn Balaclava (Jungle)", TXR(balaclava_jungle));
     FACEWEAR(cnto_flecktarn_f_bala_mediterranean, rhs_balaclava, "CNTO Flecktarn Balaclava (Mediterranean)", TXR(balaclava_mediterranean));
     FACEWEAR(cnto_flecktarn_f_bala_snow, rhs_balaclava, "CNTO Flecktarn Balaclava (Snow)", TXR(balaclava_snow));
+    FACEWEAR(cnto_flecktarn_f_bala_grassland, rhs_balaclava, "CNTO Flecktarn Balaclava (Grassland)", TXR(balaclava_grassland));
 
     FACEWEAR(cnto_flecktarn_f_band_snow, G_Bandanna_blk, "CNTO Bandana (Snow)", TXR(bandana_snow));
     FACEWEAR(cnto_flecktarn_f_band_owl1, G_Bandanna_blk, "CNTO Bandana (Owl 1)", TXR(bandana_owl1));
