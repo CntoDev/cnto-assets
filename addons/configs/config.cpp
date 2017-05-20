@@ -310,7 +310,7 @@ class CfgWeapons {
     /* ------------------------------------------- */
 
     class H_HelmetB;
-	class H_HelmetSpecB;
+    class H_HelmetSpecB;
     class H_Booniehat_khk;
     class H_Beret_blk;
     class rhs_6b27m;
@@ -330,12 +330,12 @@ class CfgWeapons {
     HEADGEAR(cnto_flecktarn_h_c_snow, H_HelmetB, "CNTO Flecktarn Combat Helmet (Snow)", TXR(snow_helmet.paa));
     HEADGEAR(cnto_flecktarn_h_c_grassland, H_HelmetB, "CNTO Flecktarn Combat Helmet (Grassland)", TXR(grassland_helmet.paa));
 	
-    HEADGEAR(cnto_flecktarn_h_s_desert, H_HelmetSpecB, "CNTO Flecktarn Combat Helmet Spec (Desert)", TXR(desert_helmet.paa));
-    HEADGEAR(cnto_flecktarn_h_s_forest, H_HelmetSpecB, "CNTO Flecktarn Combat Helmet Spec (Forest)", TXR(forest_helmet.paa));
-    HEADGEAR(cnto_flecktarn_h_s_jungle, H_HelmetSpecB, "CNTO Flecktarn Combat Helmet Spec (Jungle)", TXR(jungle_helmet.paa));
-    HEADGEAR(cnto_flecktarn_h_s_mediterranean, H_HelmetSpecB, "CNTO Flecktarn Combat Helmet Spec (Mediterranean)", TXR(mediterranean_helmet.paa));
-    HEADGEAR(cnto_flecktarn_h_s_snow, H_HelmetSpecB, "CNTO Flecktarn Combat Helmet Spec (Snow)", TXR(snow_helmet.paa));
-    HEADGEAR(cnto_flecktarn_h_s_grassland, H_HelmetSpecB, "CNTO Flecktarn Combat Helmet Spec (Grassland)", TXR(grassland_helmet.paa));
+    HEADGEAR(cnto_flecktarn_h_s_desert, H_HelmetSpecB, "CNTO Flecktarn Enhanced Combat Helmet (Desert)", TXR(desert_helmet.paa));
+    HEADGEAR(cnto_flecktarn_h_s_forest, H_HelmetSpecB, "CNTO Flecktarn Enhanced Combat Helmet (Forest)", TXR(forest_helmet.paa));
+    HEADGEAR(cnto_flecktarn_h_s_jungle, H_HelmetSpecB, "CNTO Flecktarn Enhanced Combat Helmet (Jungle)", TXR(jungle_helmet.paa));
+    HEADGEAR(cnto_flecktarn_h_s_mediterranean, H_HelmetSpecB, "CNTO Flecktarn Enhanced Combat Helmet (Mediterranean)", TXR(mediterranean_helmet.paa));
+    HEADGEAR(cnto_flecktarn_h_s_snow, H_HelmetSpecB, "CNTO Flecktarn Enhanced Combat Helmet (Snow)", TXR(snow_helmet.paa));
+    HEADGEAR(cnto_flecktarn_h_s_grassland, H_HelmetSpecB, "CNTO Flecktarn Enhanced Combat Helmet (Grassland)", TXR(grassland_helmet.paa));
 
     HEADGEAR(cnto_flecktarn_h_boo_desert, H_Booniehat_khk, "CNTO Flecktarn Boonie Hat (Desert)", TXR(desert_boonie.paa));
     HEADGEAR(cnto_flecktarn_h_boo_forest, H_Booniehat_khk, "CNTO Flecktarn Boonie Hat (Forest)", TXR(forest_boonie.paa));
@@ -371,7 +371,7 @@ class CfgWeapons {
 
     #define TXR(path) \cnto\assets\urban_headgear\##path
     HEADGEAR(cnto_urban_h_c_urban, H_HelmetB, "CNTO Urban Combat Helmet", TXR(combat_helmet.paa));
-	HEADGEAR(cnto_urban_h_s_urban, H_HelmetSpecB, "CNTO Urban Combat Helmet Spec", TXR(combat_helmet.paa));
+    HEADGEAR(cnto_urban_h_s_urban, H_HelmetSpecB, "CNTO Urban Enhanced Combat Helmet", TXR(combat_helmet.paa));
     HEADGEAR(cnto_urban_h_h_urban, H_HelmetB_TI_tna_F, "CNTO Urban Heavy Helmet", TXR(heavy_helmet.paa));
 
     /* ------------------------------------------- */
