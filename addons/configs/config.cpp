@@ -160,8 +160,6 @@ class CfgVehicles {
     BACKPACK(cnto_vanilla_kitbag_blk, B_Kitbag_Base, "Kitbag (Black)", \A3\weapons_f\ammoboxes\bags\data\backpack_fast_blk_co.paa);
     BACKPACK(cnto_vanilla_carryall_blk, B_Carryall_Base, "Carryall Backpack (Black)", \A3\weapons_f\ammoboxes\bags\data\backpack_tortila_blk_co.paa);
 
-    BACKPACK(cnto_carryall_white, B_Carryall_Base, "Carryall Backpack (White)", \cnto\assets\misc\snow_carryall.paa);
-
     /*
      * Flecktarn Backpacks
      */
@@ -361,16 +359,6 @@ class CfgWeapons {
     HEADGEAR(cnto_flecktarn_h_6b27m_mediterranean, rhs_6b27m, "Flecktarn 6b27m Helmet (Mediterranean)", TXR(mediterranean_6b27m.paa));
     HEADGEAR(cnto_flecktarn_h_6b27m_snow, rhs_6b27m, "Flecktarn 6b27m Helmet (Snow)", TXR(snow_6b27m.paa));
     HEADGEAR(cnto_flecktarn_h_6b27m_grassland, rhs_6b27m, "Flecktarn 6b27m Helmet (Grassland)", TXR(grassland_6b27m.paa));
-
-    HEADGEAR(cnto_flecktarn_h_6b27me_desert, rhs_6b27m_ess, "Flecktarn 6b27m Helmet ESS (Desert)", TXR(desert_6b27m.paa));
-    HEADGEAR(cnto_flecktarn_h_6b27me_forest, rhs_6b27m_ess, "Flecktarn 6b27m Helmet ESS (Forest)", TXR(forest_6b27m.paa));
-    HEADGEAR(cnto_flecktarn_h_6b27me_jungle, rhs_6b27m_ess, "Flecktarn 6b27m Helmet ESS (Jungle)", TXR(jungle_6b27m.paa));
-    HEADGEAR(cnto_flecktarn_h_6b27me_mediterranean, rhs_6b27m_ess, "Flecktarn 6b27m Helmet ESS (Mediterranean)", TXR(mediterranean_6b27m.paa));
-    HEADGEAR(cnto_flecktarn_h_6b27me_snow, rhs_6b27m_ess, "Flecktarn 6b27m Helmet ESS (Snow)", TXR(snow_6b27m.paa));
-    HEADGEAR(cnto_flecktarn_h_6b27me_grassland, rhs_6b27m_ess, "Flecktarn 6b27m Helmet ESS (Grassland)", TXR(grassland_6b27m.paa));
-
-    //HEADGEAR(cnto_flecktarn_h_6b47_grassland, rhs_6b27m, "Flecktarn 6b47 Helmet (Grassland)", TXR(grassland_6b47.paa));
-    //HEADGEAR(cnto_flecktarn_h_6b47e_grassland, rhs_6b47_ess, "Flecktarn 6b47 Helmet ESS (Grassland)", TXR(grassland_6b47.paa));
 
     /*
      * Urban Headgear
