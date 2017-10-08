@@ -1,4 +1,4 @@
-declare TARGET_D="@cnto-assets"
+declare TARGET_D="@cnto_assets"
 declare SOURCE_D="."
 
 rm -rf ${TARGET_D}

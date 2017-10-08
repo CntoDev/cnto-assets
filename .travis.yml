@@ -9,6 +9,6 @@ deploy:
   - provider: script
     skip_cleanup: true
     script: 
-      - "echo 'rename incoming/@cnto-assets incoming/@cnto-assets.old\nmkdir incoming/@cnto-assets\nput -r ./@cnto-assets incoming/' | sshpass -e -- sftp -o StrictHostKeyChecking=no cnto-pipeline@repo.carpenoctem.co"
+      - "echo 'rename incoming/@cnto_assets incoming/@cnto_assets.old\nmkdir incoming/@cnto_assets\nput -r ./@cnto_assets incoming/' | sshpass -e -- sftp -o StrictHostKeyChecking=no cnto-pipeline@repo.carpenoctem.co"
     on:
       branch: master
