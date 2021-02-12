@@ -79,6 +79,7 @@ class CfgPatches {
         displayName = text; \
         texture = paa; \
         textureVehicle = ""; \
+        material = "\A3\Ui_f\data\GUI\Cfg\UnitInsignia\default_insignia.rvmat"; \
     }
 
 #define VEHCAMO(veh, base, name, text, paas) \
