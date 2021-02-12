@@ -483,6 +483,13 @@ class CfgGlasses {
 
 class CfgUnitInsignia {
     /*
+     * custom CNTO insignia
+     */
+    #define TXR(path) \cnto\assets\custom_insignia\##path
+    INSIGNIA(CNTOpatch, "CNTO Patch", TXR(CNTOpatch.paa));
+    INSIGNIA(CNTOpatchAlt, "CNTO Alt Patch", TXR(CNTOpatchAlt.paa));
+
+    /*
      * BiBo's flags (worn only)
      * http://arma.rocketspeak.de
      * https://steamcommunity.com/sharedfiles/filedetails/?id=654816931
@@ -492,7 +499,6 @@ class CfgUnitInsignia {
     INSIGNIA(BELFlagW, "BiBo Belgian Flag (worn)", TXR(BELFlagW.paa));
     INSIGNIA(BGFlagW, "BiBo Bulgarian Flag (worn)", TXR(BGFlagW.paa));
     INSIGNIA(BYFlagW, "BiBo Belarusian Flag (worn)", TXR(BYFlagW.paa));
-    INSIGNIA(CNTOpatchAlt, "CNTO Alt Patch", TXR(CNTOpatchAlt.paa));
     INSIGNIA(CYFlagW, "BiBo Cyprus Flag (worn)", TXR(CYFlagW.paa));
     INSIGNIA(CZFlagW, "BiBo Czech Flag (worn)", TXR(CZFlagW.paa));
     INSIGNIA(DANFlagW, "BiBo Danish Flag (worn)", TXR(DANFlagW.paa));
