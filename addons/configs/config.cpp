@@ -1,9 +1,7 @@
 class CfgPatches {
     class cnto_assets {
         units[] = {};
-        weapons[] = {
-            "cnto_hk416_d10", "cnto_hk416_d10_m320", "cnto_hk416_d145", "cnto_hk416_d145_m320"
-        };
+        weapons[] = {};
         requiredAddons[] = {
             "A3_Characters_F",
             "A3_Weapons_F",
