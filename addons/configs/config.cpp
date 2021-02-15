@@ -486,8 +486,55 @@ class CfgUnitInsignia {
      * custom CNTO insignia
      */
     #define TXR(path) \cnto\assets\custom_insignia\##path
-    INSIGNIA(CNTOpatch, "CNTO Patch", TXR(CNTOpatch.paa));
-    INSIGNIA(CNTOpatchAlt, "CNTO Alt Patch", TXR(CNTOpatchAlt.paa));
+    INSIGNIA(CNTOpatch, "CNTO Owl Patch", TXR(CNTOpatch.paa));
+    INSIGNIA(CNTOpatchAlt, "CNTO Owl Patch (Alt)", TXR(CNTOpatchAlt.paa));
+    /* platoon elements */
+    #define TXR(path) \cnto\assets\custom_insignia\elements\##path
+    INSIGNIA(cnto_elem_plt, "CNTO Platoon Lead", TXR(plt.paa));
+    INSIGNIA(cnto_elem_asl, "CNTO Alpha SL", TXR(letters\a.paa));
+    INSIGNIA(cnto_elem_a1, "CNTO Alpha 1", TXR(a1.paa));
+    INSIGNIA(cnto_elem_a2, "CNTO Alpha 2", TXR(a2.paa));
+    INSIGNIA(cnto_elem_bsl, "CNTO Bravo SL", TXR(letters\b.paa));
+    INSIGNIA(cnto_elem_b1, "CNTO Bravo 1", TXR(b1.paa));
+    INSIGNIA(cnto_elem_b2, "CNTO Bravo 2", TXR(b2.paa));
+    INSIGNIA(cnto_elem_csl, "CNTO Charlie SL", TXR(letters\c.paa));
+    INSIGNIA(cnto_elem_c1, "CNTO Charlie 1", TXR(c1.paa));
+    INSIGNIA(cnto_elem_c2, "CNTO Charlie 2", TXR(c2.paa));
+    INSIGNIA(cnto_elem_mmg, "CNTO MMG", TXR(mmg.paa));
+    INSIGNIA(cnto_elem_mat, "CNTO MAT", TXR(mat.paa));
+    INSIGNIA(cnto_elem_mtr, "CNTO Mortar", TXR(mtr.paa));
+    INSIGNIA(cnto_elem_dmt, "CNTO DMT", TXR(dmt.paa));
+    INSIGNIA(cnto_elem_dgr, "CNTO Dagger", TXR(dgr.paa));
+    INSIGNIA(cnto_elem_nb, "CNTO Nightbird", TXR(nb.paa));
+    INSIGNIA(cnto_elem_fal, "CNTO Falcon", TXR(fal.paa));
+    /* A-Z letters for custom elements */
+    #define TXR(path) \cnto\assets\custom_insignia\elements\letters\##path
+    INSIGNIA(cnto_elem_letter_a, "CNTO Letter: A", TXR(a.paa));
+    INSIGNIA(cnto_elem_letter_b, "CNTO Letter: B", TXR(b.paa));
+    INSIGNIA(cnto_elem_letter_c, "CNTO Letter: C", TXR(c.paa));
+    INSIGNIA(cnto_elem_letter_d, "CNTO Letter: D", TXR(d.paa));
+    INSIGNIA(cnto_elem_letter_e, "CNTO Letter: E", TXR(e.paa));
+    INSIGNIA(cnto_elem_letter_f, "CNTO Letter: F", TXR(f.paa));
+    INSIGNIA(cnto_elem_letter_g, "CNTO Letter: G", TXR(g.paa));
+    INSIGNIA(cnto_elem_letter_h, "CNTO Letter: H", TXR(h.paa));
+    INSIGNIA(cnto_elem_letter_i, "CNTO Letter: I", TXR(i.paa));
+    INSIGNIA(cnto_elem_letter_j, "CNTO Letter: J", TXR(j.paa));
+    INSIGNIA(cnto_elem_letter_k, "CNTO Letter: K", TXR(k.paa));
+    INSIGNIA(cnto_elem_letter_l, "CNTO Letter: L", TXR(l.paa));
+    INSIGNIA(cnto_elem_letter_m, "CNTO Letter: M", TXR(m.paa));
+    INSIGNIA(cnto_elem_letter_n, "CNTO Letter: N", TXR(n.paa));
+    INSIGNIA(cnto_elem_letter_o, "CNTO Letter: O", TXR(o.paa));
+    INSIGNIA(cnto_elem_letter_p, "CNTO Letter: P", TXR(p.paa));
+    INSIGNIA(cnto_elem_letter_q, "CNTO Letter: Q", TXR(q.paa));
+    INSIGNIA(cnto_elem_letter_r, "CNTO Letter: R", TXR(r.paa));
+    INSIGNIA(cnto_elem_letter_s, "CNTO Letter: S", TXR(s.paa));
+    INSIGNIA(cnto_elem_letter_t, "CNTO Letter: T", TXR(t.paa));
+    INSIGNIA(cnto_elem_letter_u, "CNTO Letter: U", TXR(u.paa));
+    INSIGNIA(cnto_elem_letter_v, "CNTO Letter: V", TXR(v.paa));
+    INSIGNIA(cnto_elem_letter_w, "CNTO Letter: W", TXR(w.paa));
+    INSIGNIA(cnto_elem_letter_x, "CNTO Letter: X", TXR(x.paa));
+    INSIGNIA(cnto_elem_letter_y, "CNTO Letter: Y", TXR(y.paa));
+    INSIGNIA(cnto_elem_letter_z, "CNTO Letter: Z", TXR(z.paa));
 
     /*
      * BiBo's flags (worn only)
