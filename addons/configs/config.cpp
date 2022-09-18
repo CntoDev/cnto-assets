@@ -163,6 +163,24 @@ class CfgVehicles {
     #define MDL_SEL "camo","insignia"
     UNIFORM_SOLDIER(cnto_urban_u_s_m90, B_Soldier_base_F, TXR(m90.paa));
 
+    /*
+     * XMAS Uniforms
+     */
+    #define TXR(path) \cnto\assets\xmas_uniforms\##path COMMA
+    #define MDL MDL_BLU
+    #define MDL_SEL "camo","insignia"
+    UNIFORM_SOLDIER(cnto_xmas_u_sweater_1, B_Soldier_base_F, TXR(cnto_xmas_sweater_1.paa));
+    UNIFORM_SOLDIER(cnto_xmas_u_sweater_2, B_Soldier_base_F, TXR(cnto_xmas_sweater_2.paa));
+    UNIFORM_SOLDIER(cnto_xmas_u_sweater_3, B_Soldier_base_F, TXR(cnto_xmas_sweater_3.paa));
+    UNIFORM_SOLDIER(cnto_xmas_u_sweater_4, B_Soldier_base_F, TXR(cnto_xmas_sweater_4.paa));
+    #define MDL MDL_BLU_RECON
+    #define MDL_SEL "camo","insignia"
+    UNIFORM_SOLDIER(cnto_xmas_u_r_sweater_1, B_Soldier_base_F, TXR(cnto_xmas_sweater_1.paa));
+    UNIFORM_SOLDIER(cnto_xmas_u_r_sweater_2, B_Soldier_base_F, TXR(cnto_xmas_sweater_2.paa));
+    UNIFORM_SOLDIER(cnto_xmas_u_r_sweater_3, B_Soldier_base_F, TXR(cnto_xmas_sweater_3.paa));
+    UNIFORM_SOLDIER(cnto_xmas_u_r_sweater_4, B_Soldier_base_F, TXR(cnto_xmas_sweater_4.paa));
+
+
     /* ------------------------------------------- */
 
     class B_AssaultPack_Base;
@@ -281,6 +299,22 @@ class CfgWeapons {
     UNIFORM(cnto_urban_u_r_m90_crew, U_B_CombatUniform_mcam_vest, "M90 Urban Recon (crew)", TXR(m90_crew.paa));
 
     UNIFORM(cnto_urban_u_s_m90, U_B_CTRG_Soldier_F, "M90 Urban Stealth", TXR(m90.paa));
+
+        /*
+     * XMAS Uniforms
+     */
+    #define TXR(path) \cnto\assets\xmas_uniforms\##path COMMA
+
+    UNIFORM(cnto_xmas_u_sweater_1, U_B_CombatUniform_mcam, "XMAS Sweater (Owls)", TXR(cnto_xmas_sweater_1.paa));
+    UNIFORM(cnto_xmas_u_sweater_2, U_B_CombatUniform_mcam, "XMAS Sweater (Santa)", TXR(cnto_xmas_sweater_2.paa));
+    UNIFORM(cnto_xmas_u_sweater_3, U_B_CombatUniform_mcam, "XMAS Sweater (Classic)", TXR(cnto_xmas_sweater_3.paa));
+    UNIFORM(cnto_xmas_u_sweater_4, U_B_CombatUniform_mcam, "XMAS Sweater (Caw Caw)", TXR(cnto_xmas_sweater_4.paa));
+
+    UNIFORM(cnto_xmas_u_r_sweater_1, U_B_CombatUniform_mcam_vest, "XMAS Sweater Rolled-Up (Owls)", TXR(cnto_xmas_sweater_1.paa));
+    UNIFORM(cnto_xmas_u_r_sweater_2, U_B_CombatUniform_mcam_vest, "XMAS Sweater Rolled-Up (Santa)", TXR(cnto_xmas_sweater_2.paa));
+    UNIFORM(cnto_xmas_u_r_sweater_3, U_B_CombatUniform_mcam_vest, "XMAS Sweater Rolled-Up (Classic)", TXR(cnto_xmas_sweater_3.paa));
+    UNIFORM(cnto_xmas_u_r_sweater_4, U_B_CombatUniform_mcam_vest, "XMAS Sweater Rolled-Up (Caw Caw)", TXR(cnto_xmas_sweater_4.paa));
+
 
     /* ------------------------------------------- */
 
